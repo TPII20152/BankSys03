@@ -24,7 +24,7 @@ public class ATM24H {
 				AbstractAccount account = null;
 				switch (addAccountMenu()) {
 				case 1:
-					System.out.println("Enter the ordinary account number:");
+					System.out.println("Enter the ordinary account number: ");
 					account = new OrdinaryAccount(scanner.next());
 					break;
 				case 2:
