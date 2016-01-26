@@ -31,8 +31,26 @@ public class LoginFrame extends JFrame {
 		setBackground(Color.PINK);
 		setTitle("Automated Teller Machine");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 600, 350);
+		setBounds(100, 100, 600, 350);	
 		
+		contentPane = new JPanel();
+		titlePane = new JPanel();
+		accountNumberPane = new JPanel();
+		buttonsPane = new JPanel();
+		
+		titlePane.setBackground(Color.WHITE);
+		accountNumberPane.setBackground(Color.WHITE);
+		buttonsPane.setBackground(Color.WHITE);	
+		contentPane.setBackground(Color.PINK);
+		
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		
+		menuBar();
+		initialize();
+	}
+	
+	private void menuBar() {
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBackground(Color.PINK);
 		setJMenuBar(menuBar);
@@ -56,21 +74,6 @@ public class LoginFrame extends JFrame {
 		JMenuItem aboutMenuItem = new JMenuItem("About");
 		helpMenu.add(aboutMenuItem);
 		aboutMenuItem.setBackground(Color.WHITE);
-		
-		contentPane = new JPanel();
-		titlePane = new JPanel();
-		accountNumberPane = new JPanel();
-		buttonsPane = new JPanel();
-		
-		titlePane.setBackground(Color.WHITE);
-		accountNumberPane.setBackground(Color.WHITE);
-		buttonsPane.setBackground(Color.WHITE);	
-		contentPane.setBackground(Color.PINK);
-		
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		
-		initialize();
 	}
 	
 	private void initialize() {
