@@ -33,6 +33,7 @@ public class LoginFrame extends JFrame {
 	
 	private AboutAction aboutAction;
 	private ExitAction exitAction;
+	private AddNewAccountAction addNewAccountAction;
 
 	public LoginFrame() {
 		setBackground(Color.PINK);
@@ -60,6 +61,7 @@ public class LoginFrame extends JFrame {
 	private void menuBar() {
 		aboutAction = new AboutAction();
 		exitAction = new ExitAction();
+		addNewAccountAction = new AddNewAccountAction();
 		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBackground(Color.PINK);
@@ -72,6 +74,8 @@ public class LoginFrame extends JFrame {
 		JMenuItem addNewAccountMenuItem = new JMenuItem("Add New Account");
 		optionsMenu.add(addNewAccountMenuItem);
 		addNewAccountMenuItem.setBackground(Color.WHITE);
+		
+		addNewAccountMenuItem.addActionListener(addNewAccountAction);
 		
 		JMenuItem exitMenuItem = new JMenuItem("Exit");
 		exitMenuItem.setBackground(Color.WHITE);
@@ -159,6 +163,15 @@ public class LoginFrame extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			System.exit(0);			
+		}
+	}
+	
+	private class AddNewAccountAction implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			AddNewAccountFrame addNewAccountFrame = new AddNewAccountFrame();
+			addNewAccountFrame.setVisible(true);
 		}
 	}
 }
