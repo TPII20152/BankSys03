@@ -9,6 +9,7 @@ import banksys.account.SpecialAccount;
 import banksys.account.TaxAccount;
 import banksys.control.BankController;
 import banksys.control.exception.BankTransactionException;
+import banksys.gui.LoginFrame;
 import banksys.persistence.AccountVector;
 
 public class ATM24H {
@@ -18,6 +19,11 @@ public class ATM24H {
 	public static void main(String[] args) {
 		BankController bank = new BankController(new AccountVector());
 		boolean loop = true;
+		
+		// GUI test
+		LoginFrame loginFrame = new LoginFrame();
+		loginFrame.setVisible(true);
+		
 		while (loop) {
 			switch (mainMenu()) {
 			case 1:
