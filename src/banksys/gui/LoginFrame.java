@@ -7,6 +7,9 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import java.awt.BorderLayout;
@@ -15,6 +18,7 @@ import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JMenu;
 
 public class LoginFrame extends JFrame {
@@ -26,6 +30,9 @@ public class LoginFrame extends JFrame {
 	private JPanel accountNumberPane;
 	private JPanel buttonsPane;
 	private JTextField accountNumberTextField;
+	
+	private AboutAction aboutAction;
+	private ExitAction exitAction;
 
 	public LoginFrame() {
 		setBackground(Color.PINK);
@@ -51,6 +58,9 @@ public class LoginFrame extends JFrame {
 	}
 	
 	private void menuBar() {
+		aboutAction = new AboutAction();
+		exitAction = new ExitAction();
+		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBackground(Color.PINK);
 		setJMenuBar(menuBar);
@@ -67,6 +77,8 @@ public class LoginFrame extends JFrame {
 		exitMenuItem.setBackground(Color.WHITE);
 		optionsMenu.add(exitMenuItem);
 		
+		exitMenuItem.addActionListener(exitAction);
+		
 		JMenu helpMenu = new JMenu("Help");
 		helpMenu.setBackground(Color.PINK);
 		menuBar.add(helpMenu);
@@ -74,9 +86,13 @@ public class LoginFrame extends JFrame {
 		JMenuItem aboutMenuItem = new JMenuItem("About");
 		helpMenu.add(aboutMenuItem);
 		aboutMenuItem.setBackground(Color.WHITE);
+		
+		aboutMenuItem.addActionListener(aboutAction);
 	}
 	
 	private void initialize() {
+		exitAction = new ExitAction();
+		
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
 		FlowLayout fl_accountNumberPane = new FlowLayout();
@@ -122,7 +138,27 @@ public class LoginFrame extends JFrame {
 		JButton exitButton = new JButton("Exit");
 		buttonsPane.add(exitButton);
 		
+		exitButton.addActionListener(exitAction);
+		
 		contentPane.add(buttonsPane, BorderLayout.SOUTH);
 	}
 
+	private class AboutAction implements ActionListener {
+		
+		ImageIcon icon = new ImageIcon(LoginFrame.class.getResource("/banksys/icon/icon2.png"));
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			JOptionPane.showMessageDialog(null, "Made by I. Santiago and L. Rocha\n"
+											  + "from Federal University of Ceará", "About", JOptionPane.INFORMATION_MESSAGE, icon);			
+		}
+	}
+	
+	private class ExitAction implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			System.exit(0);			
+		}
+	}
 }
