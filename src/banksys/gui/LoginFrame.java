@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import banksys.control.BankController;
+import banksys.persistence.exception.AccountNotFoundException;
 
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -37,6 +38,7 @@ public class LoginFrame extends JFrame {
 	private AboutAction aboutAction;
 	private ExitAction exitAction;
 	private AddNewAccountAction addNewAccountAction;
+	private OkAction okAction;
 	
 	private BankController bank;
 
@@ -46,7 +48,7 @@ public class LoginFrame extends JFrame {
 		setBackground(Color.PINK);
 		setTitle("Automated Teller Machine");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 600, 350);	
+		setBounds(100, 100, 550, 330);	
 		
 		contentPane = new JPanel();
 		titlePane = new JPanel();
@@ -103,6 +105,7 @@ public class LoginFrame extends JFrame {
 	
 	private void initialize() {
 		exitAction = new ExitAction();
+		okAction = new OkAction();
 		
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
@@ -146,6 +149,8 @@ public class LoginFrame extends JFrame {
 		JButton okButton = new JButton("OK");
 		buttonsPane.add(okButton);
 		
+		okButton.addActionListener(okAction);
+		
 		JButton exitButton = new JButton("Exit");
 		buttonsPane.add(exitButton);
 		
@@ -156,7 +161,7 @@ public class LoginFrame extends JFrame {
 
 	private class AboutAction implements ActionListener {
 		
-		ImageIcon icon = new ImageIcon(LoginFrame.class.getResource("/banksys/icon/icon2.png"));
+		ImageIcon icon = new ImageIcon(LoginFrame.class.getResource("/banksys/icon/icon3.png"));
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -180,5 +185,26 @@ public class LoginFrame extends JFrame {
 			AddNewAccountFrame addNewAccountFrame = new AddNewAccountFrame(bank);
 			addNewAccountFrame.setVisible(true);
 		}
+	}
+	
+	private class OkAction implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if (accountNumberTextField.getText().isEmpty()) {
+				JOptionPane.showMessageDialog(null, "Please inform your account number or add a new one.", "Warning", JOptionPane.WARNING_MESSAGE);
+			}
+			else {
+				try {
+					if (bank.exists(accountNumberTextField.getText())) {
+						TransactionsFrame frame = new TransactionsFrame(bank, accountNumberTextField.getText());
+						frame.setVisible(true);
+					}
+				} catch (AccountNotFoundException e1) {
+					JOptionPane.showMessageDialog(null, "Account not found!\nPlease check your account number or add a new one.", "Error", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		}
+		
 	}
 }

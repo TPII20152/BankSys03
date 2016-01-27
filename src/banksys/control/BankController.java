@@ -19,6 +19,15 @@ public class BankController {
 	public BankController(IAccountRepository repository) {
 		this.repository = repository;
 	}
+	
+	public boolean exists(String number) throws AccountNotFoundException {		
+		AbstractAccount account = this.repository.retrieve(number);
+		if (account != null) {
+			return true;
+		} else {
+			throw new AccountNotFoundException("OrdinaryAccount not found!", number);
+		}
+	}
 
 	public void addAccount(AbstractAccount account) throws BankTransactionException {
 		try {

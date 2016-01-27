@@ -158,7 +158,7 @@ public class ATM24H {
 
 	private static int mainMenu() {
 		System.out.println("================================");
-		System.out.println("Wellcome to the Our Bank");
+		System.out.println("Welcome to the Our Bank");
 		System.out.println("Automated Teller Machine");
 		System.out.println("================================");
 		System.out.println(" [1] Add New OrdinaryAccount");
@@ -167,7 +167,7 @@ public class ATM24H {
 		System.out.println(" [4] Do Transfer");
 		System.out.println(" [5] Show Balance");
 		System.out.println(" [6] Remove OrdinaryAccount");
-		System.out.println(" [7] Earn Iterest");
+		System.out.println(" [7] Earn Interest");
 		System.out.println(" [8] Earn Bonus");
 		System.out.println(" [9] Exit");
 		System.out.println("================================");

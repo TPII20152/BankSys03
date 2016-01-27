@@ -79,6 +79,8 @@ public class AddNewAccountFrame extends JFrame {
 		flowLayout.setHgap(30);
 		optionsPane = new JPanel();
 		accountNumberPane = new JPanel();
+		FlowLayout flowLayout_3 = (FlowLayout) accountNumberPane.getLayout();
+		flowLayout_3.setHgap(20);
 		buttonsPane = new JPanel();
 		buttonsPane.setBackground(Color.WHITE);
 		FlowLayout flowLayout_1 = (FlowLayout) buttonsPane.getLayout();
