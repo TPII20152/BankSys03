@@ -163,7 +163,7 @@ public class TransactionsFrame extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			DoCreditFrame doCreditFrame = new DoCreditFrame();
+			DoCreditFrame doCreditFrame = new DoCreditFrame(bank, number);
 			doCreditFrame.setVisible(true);
 		}
 		
@@ -173,7 +173,7 @@ public class TransactionsFrame extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			DoDebitFrame doDebitFrame = new DoDebitFrame();
+			DoDebitFrame doDebitFrame = new DoDebitFrame(bank, number);
 			doDebitFrame.setVisible(true);
 		}
 		
@@ -183,7 +183,7 @@ public class TransactionsFrame extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			DoTransferFrame doTransferFrame = new DoTransferFrame();
+			DoTransferFrame doTransferFrame = new DoTransferFrame(bank, number);
 			doTransferFrame.setVisible(true);
 		}
 		
