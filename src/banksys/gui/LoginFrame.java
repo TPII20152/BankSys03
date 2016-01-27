@@ -5,6 +5,9 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import banksys.control.BankController;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -34,8 +37,12 @@ public class LoginFrame extends JFrame {
 	private AboutAction aboutAction;
 	private ExitAction exitAction;
 	private AddNewAccountAction addNewAccountAction;
+	
+	private BankController bank;
 
-	public LoginFrame() {
+	public LoginFrame(BankController bank) {
+		this.bank = bank;
+		
 		setBackground(Color.PINK);
 		setTitle("Automated Teller Machine");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -170,7 +177,7 @@ public class LoginFrame extends JFrame {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			AddNewAccountFrame addNewAccountFrame = new AddNewAccountFrame();
+			AddNewAccountFrame addNewAccountFrame = new AddNewAccountFrame(bank);
 			addNewAccountFrame.setVisible(true);
 		}
 	}

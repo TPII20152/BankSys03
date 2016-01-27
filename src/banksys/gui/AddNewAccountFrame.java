@@ -7,13 +7,27 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import banksys.account.AbstractAccount;
+import banksys.account.OrdinaryAccount;
+import banksys.account.SavingsAccount;
+import banksys.account.SpecialAccount;
+import banksys.account.TaxAccount;
+import banksys.control.BankController;
+import banksys.control.exception.BankTransactionException;
+
 import java.awt.Color;
 import javax.swing.JRadioButton;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
 import javax.swing.JButton;
 import java.awt.FlowLayout;
 
@@ -31,8 +45,22 @@ public class AddNewAccountFrame extends JFrame {
 	private JLabel titleLabel;
 	private JButton okButton;
 	private JButton cancelButton;
+	private CancelAction cancelAction;
+	private OkAction okAction;
+	private ButtonGroup buttonGroup;
+	private JRadioButton ordinaryRadioButton;
+	private JRadioButton specialRadioButton;
+	private JRadioButton savingsRadioButton;
+	private JRadioButton taxRadioButton;
+	
+	private BankController bank;
 
-	public AddNewAccountFrame() {
+	public AddNewAccountFrame(BankController bank) {
+		this.bank = bank;
+		
+		cancelAction = new CancelAction();
+		okAction = new OkAction();
+		
 		setBackground(Color.CYAN);
 		setTitle("Add New Account");
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
@@ -60,8 +88,12 @@ public class AddNewAccountFrame extends JFrame {
 		okButton = new JButton("OK");
 		buttonsPane.add(okButton);
 		
+		okButton.addActionListener(okAction);
+		
 		cancelButton = new JButton("Cancel");
 		buttonsPane.add(cancelButton);
+		
+		cancelButton.addActionListener(cancelAction);
 		
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -70,7 +102,7 @@ public class AddNewAccountFrame extends JFrame {
 	}
 	
 	private void initialize() {		
-		ButtonGroup buttonGroup = new ButtonGroup();
+		buttonGroup = new ButtonGroup();
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
 		titleLabel = new JLabel("Add New Account");
@@ -86,16 +118,20 @@ public class AddNewAccountFrame extends JFrame {
 		
 		optionsPane.setLayout(new BoxLayout(optionsPane, BoxLayout.Y_AXIS));
 		
-		JRadioButton ordinaryRadioButton = new JRadioButton("Ordinary");
+		ordinaryRadioButton = new JRadioButton("Ordinary");
+		ordinaryRadioButton.setMnemonic(KeyEvent.VK_O);
 		optionsPane.add(ordinaryRadioButton);
 		
-		JRadioButton specialRadioButton = new JRadioButton("Special");
+		specialRadioButton = new JRadioButton("Special");
+		specialRadioButton.setMnemonic(KeyEvent.VK_P);
 		optionsPane.add(specialRadioButton);
 		
-		JRadioButton savingsRadioButton = new JRadioButton("Savings");
+		savingsRadioButton = new JRadioButton("Savings");
+		savingsRadioButton.setMnemonic(KeyEvent.VK_A);
 		optionsPane.add(savingsRadioButton);
 		
-		JRadioButton taxRadioButton = new JRadioButton("Tax");
+		taxRadioButton = new JRadioButton("Tax");
+		taxRadioButton.setMnemonic(KeyEvent.VK_T);
 		optionsPane.add(taxRadioButton);
 		
 		buttonGroup.add(ordinaryRadioButton);
@@ -119,4 +155,81 @@ public class AddNewAccountFrame extends JFrame {
 		contentPane.add(buttonsPane, BorderLayout.SOUTH);
 	}
 
+	private class CancelAction implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			setVisible(false);
+		}
+		
+	}
+	
+	private class OkAction implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			
+			AbstractAccount account;
+			
+			if ((buttonGroup.getSelection() == null) || (accountNumberTextField.getText().isEmpty())) {
+				JOptionPane.showMessageDialog(null, "You need to fill all the fields.", "Warning", JOptionPane.WARNING_MESSAGE);	
+			}
+			else {
+				switch (buttonGroup.getSelection().getMnemonic()) {
+				case (KeyEvent.VK_O):
+				{
+					account = new OrdinaryAccount(accountNumberTextField.getText());
+					
+					try {
+						bank.addAccount(account);
+						JOptionPane.showMessageDialog(null, "Operation was successful!\nOrdinary account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
+					} catch (BankTransactionException bte) {
+						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
+					}
+				}
+				break;
+				
+				case (KeyEvent.VK_P):
+				{
+					account = new SpecialAccount(accountNumberTextField.getText());
+					
+					try {
+						bank.addAccount(account);
+						JOptionPane.showMessageDialog(null, "Operation was successful!\nSpecial account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
+					} catch (BankTransactionException bte) {
+						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
+					}
+				}
+				break;
+				
+				case (KeyEvent.VK_A):
+				{
+					account = new SavingsAccount(accountNumberTextField.getText());
+					
+					try {
+						bank.addAccount(account);
+						JOptionPane.showMessageDialog(null, "Operation was successful!\nSavings account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
+					} catch (BankTransactionException bte) {
+						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
+					}
+				}
+				break;
+				
+				case (KeyEvent.VK_T):
+				{
+					account = new TaxAccount(accountNumberTextField.getText());
+					
+					try {
+						bank.addAccount(account);
+						JOptionPane.showMessageDialog(null, "Operation was successful!\nTax account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
+					} catch (BankTransactionException bte) {
+						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
+					}
+				}
+				break;
+				}
+			}
+		}
+		
+	}
 }

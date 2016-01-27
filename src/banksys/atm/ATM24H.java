@@ -21,7 +21,7 @@ public class ATM24H {
 		boolean loop = true;
 		
 		// GUI test
-		LoginFrame loginFrame = new LoginFrame();
+		LoginFrame loginFrame = new LoginFrame(bank);
 		loginFrame.setVisible(true);
 		
 		while (loop) {
