@@ -4,5 +4,8 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-7-oracle"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/home/0322851/workspace/BankSys03/lib/xstream-1.4.8.jar"/>
+	<classpathentry kind="lib" path="/home/0322851/workspace/BankSys03/lib/xstream-benchmark-1.4.8.jar"/>
+	<classpathentry kind="lib" path="/home/0322851/workspace/BankSys03/lib/xstream-hibernate-1.4.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

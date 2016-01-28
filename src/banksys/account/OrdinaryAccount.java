@@ -1,8 +1,11 @@
 package banksys.account;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import banksys.account.exception.InsufficientFundsException;
 import banksys.account.exception.NegativeAmountException;
 
+@XStreamAlias(value = "OrdinaryAccount")
 public class OrdinaryAccount extends AbstractAccount {
 
 	public OrdinaryAccount(String number) {

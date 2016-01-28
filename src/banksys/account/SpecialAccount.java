@@ -1,9 +1,13 @@
 package banksys.account;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import banksys.account.exception.NegativeAmountException;
 
+@XStreamAlias(value = "SpecialAccount")
 public class SpecialAccount extends OrdinaryAccount {
 
+	@XStreamAlias(value = "bonus")
 	private double bonus;
 
 	public SpecialAccount(String number) {

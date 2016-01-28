@@ -1,5 +1,6 @@
 package banksys.atm;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import banksys.account.AbstractAccount;
@@ -10,19 +11,34 @@ import banksys.account.TaxAccount;
 import banksys.control.BankController;
 import banksys.control.exception.BankTransactionException;
 import banksys.gui.LoginFrame;
+import banksys.persistence.AccountPersistence;
 import banksys.persistence.AccountVector;
+import banksys.persistence.exception.AccountCreationException;
 
 public class ATM24H {
 
 	private static Scanner scanner = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException, AccountCreationException {
 		BankController bank = new BankController(new AccountVector());
 		boolean loop = true;
 		
-		// GUI test
+		// GUI
 		LoginFrame loginFrame = new LoginFrame(bank);
 		loginFrame.setVisible(true);
+		
+		// Persistence Test
+		
+		// Remember to erase the 'throws Exceptions' after testing
+		
+//		AbstractAccount testAccount1 = new TaxAccount("1111");
+		AbstractAccount testAccount2 = new OrdinaryAccount("1234");
+//		AbstractAccount testAccount3 = new SavingsAccount("2345");
+//		AbstractAccount testAccount4 = new SpecialAccount("3456");
+
+		AccountPersistence ap = new AccountPersistence();
+		
+		ap.create(testAccount2);
 		
 		while (loop) {
 			switch (mainMenu()) {

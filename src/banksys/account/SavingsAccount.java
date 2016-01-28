@@ -1,7 +1,10 @@
 package banksys.account;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import banksys.account.exception.NegativeAmountException;
 
+@XStreamAlias(value = "SavingsAccount")
 public class SavingsAccount extends OrdinaryAccount {
 
 	public SavingsAccount(String number) {
