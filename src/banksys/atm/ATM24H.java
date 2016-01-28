@@ -38,7 +38,7 @@ public class ATM24H {
 
 		AccountPersistence ap = new AccountPersistence();
 		
-		ap.create(testAccount2);
+		ap.save();
 		
 		while (loop) {
 			switch (mainMenu()) {
