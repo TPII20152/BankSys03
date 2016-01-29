@@ -2,7 +2,7 @@ package banksys.gui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -73,7 +73,7 @@ public class DoTransferFrame extends JFrame {
 				bank.doTransfer(number, destinationAccountNumberTextField.getText(), Float.parseFloat(amountTextField.getText()));
 				JOptionPane.showMessageDialog(null, "Operation was successful!", "Success", JOptionPane.PLAIN_MESSAGE);
 				setVisible(false);
-			} catch (BankTransactionException | NumberFormatException | FileNotFoundException bte) {
+			} catch (BankTransactionException | NumberFormatException | IOException bte) {
 				JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}

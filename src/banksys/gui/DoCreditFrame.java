@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import javax.swing.JButton;
 
@@ -65,7 +65,7 @@ public class DoCreditFrame extends JFrame {
 				bank.doCredit(number, Float.parseFloat(amountTextField.getText()));
 				JOptionPane.showMessageDialog(null, "Operation was successful!", "Success", JOptionPane.PLAIN_MESSAGE);
 				setVisible(false);
-			} catch (BankTransactionException | NumberFormatException | FileNotFoundException bte) {
+			} catch (BankTransactionException | NumberFormatException | IOException bte) {
 				JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}

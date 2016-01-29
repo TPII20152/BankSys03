@@ -1,5 +1,22 @@
-(29-01-2016 15:08:11) teste
-(29-01-2016 15:08:12) teste
-(29-01-2016 15:08:13) teste
-(29-01-2016 15:24:19) [Success] {Add Account} Account number 6666 was created.
-(29-01-2016 15:29:11) [Success] <Remove Account> Account number 6666 was removed.
+(29-01-2016 19:05:13) [Success] <Add Account> Account number 6666 was created
+(29-01-2016 19:05:58) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(29-01-2016 19:06:30) [Success] <Remove Account> Account number 6666 was removed
+(29-01-2016 19:07:09) [Success] <Credit> Account number 1111 got the credit of 20.0
+(29-01-2016 19:07:22) [Error] <Credit> Account number 1111 didn't get the credit of -10.0 (negative amount)
+(29-01-2016 19:08:30) [Error] <Debit> Account number 1111 didn't get the debit of -10.0 (negative amount)
+(29-01-2016 19:08:46) [Success] <Debit> Account number 1111 got the debit of 10.0
+(29-01-2016 19:08:51) [Success] <Balance> Account number 1111 consulted balance: 29.980000000000004
+(29-01-2016 19:10:40) [Error] <Retrieve> Account number 8888 not found
+(29-01-2016 19:12:05) [Error] <Transfer> The amount of -10.0 wasn't transfered from 5555 to 3333 (negative amount)
+(29-01-2016 19:12:23) [Error] <Transfer> The amount of 75.0 wasn't transfered from 5555 to 3333 (insufficient funds)
+(29-01-2016 19:12:50) [Success] <Transfer> The amount of 10.0 was transfered from 5555 to 3333
+(29-01-2016 19:13:47) [Error] <Earn Interest> Account number 2222 is not compatible with this operation (not a Savings Account)
+(29-01-2016 19:14:44) [Success] <Earn Interest> Account number 3333 got interest credited
+(29-01-2016 19:14:59) [Success] <Balance> Account number 3333 consulted balance: 40.05001
+(29-01-2016 19:15:36) [Error] <Earn Bonus> Account number 2222 is not compatible with this operation (not a Special Account)
+(29-01-2016 19:15:59) [Success] <Credit> Account number 2222 got the credit of 10.0
+(29-01-2016 19:16:02) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(29-01-2016 19:16:43) [Success] <Credit> Account number 4444 got the credit of 15.0
+(29-01-2016 19:16:45) [Success] <Balance> Account number 4444 consulted balance: 40.25
+(29-01-2016 19:17:00) [Success] <Earn Bonus> Account number 4444 got bonus credited
+(29-01-2016 19:17:02) [Success] <Balance> Account number 4444 consulted balance: 40.4

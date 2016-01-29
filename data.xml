@@ -1,23 +1,23 @@
 <list>
   <banksys.account.TaxAccount>
     <number>1111</number>
-    <balance>19.990000000000002</balance>
+    <balance>29.980000000000004</balance>
   </banksys.account.TaxAccount>
   <banksys.account.OrdinaryAccount>
     <number>2222</number>
-    <balance>0.0</balance>
+    <balance>10.0</balance>
   </banksys.account.OrdinaryAccount>
   <banksys.account.SpecialAccount>
     <number>4444</number>
-    <balance>25.25</balance>
+    <balance>40.4</balance>
     <bonus>0.0</bonus>
   </banksys.account.SpecialAccount>
   <banksys.account.SavingsAccount>
     <number>3333</number>
-    <balance>10.01</balance>
+    <balance>40.05001</balance>
   </banksys.account.SavingsAccount>
   <banksys.account.OrdinaryAccount>
     <number>5555</number>
-    <balance>70.0</balance>
+    <balance>55.0</balance>
   </banksys.account.OrdinaryAccount>
 </list>

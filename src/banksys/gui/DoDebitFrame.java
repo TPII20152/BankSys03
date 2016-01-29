@@ -14,7 +14,7 @@ import banksys.control.exception.BankTransactionException;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class DoDebitFrame extends JFrame {
 
@@ -64,7 +64,7 @@ public class DoDebitFrame extends JFrame {
 				bank.doDebit(number, Float.parseFloat(amountTextField.getText()));
 				JOptionPane.showMessageDialog(null, "Operation was successful!", "Success", JOptionPane.PLAIN_MESSAGE);
 				setVisible(false);
-			} catch (BankTransactionException | NumberFormatException | FileNotFoundException bte) {
+			} catch (BankTransactionException | NumberFormatException | IOException bte) {
 				JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}
