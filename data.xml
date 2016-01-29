@@ -1,4 +1,23 @@
-<banksys.account.TaxAccount>
-  <number>1111</number>
-  <balance>0.0</balance>
-</banksys.account.TaxAccount>
+<list>
+  <banksys.account.TaxAccount>
+    <number>1111</number>
+    <balance>19.990000000000002</balance>
+  </banksys.account.TaxAccount>
+  <banksys.account.OrdinaryAccount>
+    <number>2222</number>
+    <balance>0.0</balance>
+  </banksys.account.OrdinaryAccount>
+  <banksys.account.SpecialAccount>
+    <number>4444</number>
+    <balance>25.25</balance>
+    <bonus>0.0</bonus>
+  </banksys.account.SpecialAccount>
+  <banksys.account.SavingsAccount>
+    <number>3333</number>
+    <balance>10.01</balance>
+  </banksys.account.SavingsAccount>
+  <banksys.account.OrdinaryAccount>
+    <number>5555</number>
+    <balance>70.0</balance>
+  </banksys.account.OrdinaryAccount>
+</list>

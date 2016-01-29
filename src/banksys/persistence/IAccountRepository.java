@@ -1,5 +1,7 @@
 package banksys.persistence;
 
+import java.io.FileNotFoundException;
+
 import banksys.account.AbstractAccount;
 import banksys.persistence.exception.AccountCreationException;
 import banksys.persistence.exception.AccountDeletionException;
@@ -10,6 +12,8 @@ public interface IAccountRepository {
 	public void create(AbstractAccount account) throws AccountCreationException;
 
 	public void delete(String number) throws AccountDeletionException;
+	
+	public void update(AbstractAccount account) throws FileNotFoundException;
 
 	public AbstractAccount retrieve(String number) throws AccountNotFoundException;
 

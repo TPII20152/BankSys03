@@ -64,7 +64,7 @@ public class AddNewAccountFrame extends JFrame {
 		setBackground(Color.CYAN);
 		setTitle("Add New Account");
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-		setBounds(100, 100, 400, 450);
+		setBounds(100, 100, 400, 500);
 		
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.CYAN);
