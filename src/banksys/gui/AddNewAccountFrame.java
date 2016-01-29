@@ -27,6 +27,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 
 import javax.swing.JButton;
 import java.awt.FlowLayout;
@@ -185,7 +186,7 @@ public class AddNewAccountFrame extends JFrame {
 					try {
 						bank.addAccount(account);
 						JOptionPane.showMessageDialog(null, "Operation was successful!\nOrdinary account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
-					} catch (BankTransactionException bte) {
+					} catch (BankTransactionException | IOException bte) {
 						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
@@ -198,7 +199,7 @@ public class AddNewAccountFrame extends JFrame {
 					try {
 						bank.addAccount(account);
 						JOptionPane.showMessageDialog(null, "Operation was successful!\nSpecial account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
-					} catch (BankTransactionException bte) {
+					} catch (BankTransactionException | IOException bte) {
 						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
@@ -211,7 +212,7 @@ public class AddNewAccountFrame extends JFrame {
 					try {
 						bank.addAccount(account);
 						JOptionPane.showMessageDialog(null, "Operation was successful!\nSavings account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
-					} catch (BankTransactionException bte) {
+					} catch (BankTransactionException | IOException bte) {
 						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
 					}
 				}
@@ -224,7 +225,7 @@ public class AddNewAccountFrame extends JFrame {
 					try {
 						bank.addAccount(account);
 						JOptionPane.showMessageDialog(null, "Operation was successful!\nTax account number " + accountNumberTextField.getText() + " was registed.", "Success", JOptionPane.PLAIN_MESSAGE);
-					} catch (BankTransactionException bte) {
+					} catch (BankTransactionException | IOException bte) {
 						JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
 					}
 				}

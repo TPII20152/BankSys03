@@ -1,6 +1,7 @@
 package banksys.control;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import banksys.account.AbstractAccount;
 import banksys.account.SavingsAccount;
@@ -9,6 +10,7 @@ import banksys.account.exception.InsufficientFundsException;
 import banksys.account.exception.NegativeAmountException;
 import banksys.control.exception.BankTransactionException;
 import banksys.control.exception.IncompatibleAccountException;
+import banksys.logging.Logger;
 import banksys.persistence.IAccountRepository;
 import banksys.persistence.exception.AccountCreationException;
 import banksys.persistence.exception.AccountDeletionException;
@@ -31,20 +33,24 @@ public class BankController {
 		}
 	}
 
-	public void addAccount(AbstractAccount account) throws BankTransactionException {
+	public void addAccount(AbstractAccount account) throws BankTransactionException, IOException {
 		try {
 			this.repository.create(account);
 		} catch (AccountCreationException ace) {
+			Logger.register("[Error] <Add Account> Account number " + account.getNumber() + " wasn't created.");
 			throw new BankTransactionException(ace);
 		}
+		Logger.register("[Success] <Add Account> Account number " + account.getNumber() + " was created.");
 	}
 
-	public void removeAccount(String number) throws BankTransactionException {
+	public void removeAccount(String number) throws BankTransactionException, IOException {
 		try {
 			this.repository.delete(number);
 		} catch (AccountDeletionException ade) {
+			Logger.register("[Error] <Remove Account> Account number " + number + " wasn't removed.");
 			throw new BankTransactionException(ade);
 		}
+		Logger.register("[Success] <Remove Account> Account number " + number + " was removed.");
 	}
 
 	public void doCredit(String number, double amount) throws BankTransactionException, FileNotFoundException {
