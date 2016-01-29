@@ -48,7 +48,7 @@ public class LoginFrame extends JFrame {
 		setBackground(Color.PINK);
 		setTitle("Automated Teller Machine");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 550, 340);	
+		setBounds(100, 100, 550, 380);	
 		
 		contentPane = new JPanel();
 		titlePane = new JPanel();

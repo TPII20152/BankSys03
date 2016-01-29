@@ -1,45 +1,36 @@
 package banksys.atm;
 
-import java.io.IOException;
-import java.util.Scanner;
+//import java.util.Scanner;
 
-import banksys.account.AbstractAccount;
-import banksys.account.OrdinaryAccount;
-import banksys.account.SavingsAccount;
-import banksys.account.SpecialAccount;
-import banksys.account.TaxAccount;
+import java.io.IOException;
+
+//import banksys.account.AbstractAccount;
+//import banksys.account.OrdinaryAccount;
+//import banksys.account.SavingsAccount;
+//import banksys.account.SpecialAccount;
+//import banksys.account.TaxAccount;
+//import banksys.control.exception.BankTransactionException;
+
 import banksys.control.BankController;
-import banksys.control.exception.BankTransactionException;
 import banksys.gui.LoginFrame;
 import banksys.persistence.AccountPersistence;
-import banksys.persistence.AccountVector;
-import banksys.persistence.exception.AccountCreationException;
 
 public class ATM24H {
 
-	private static Scanner scanner = new Scanner(System.in);
-
-	public static void main(String[] args) throws IOException, AccountCreationException {
-		BankController bank = new BankController(new AccountVector());
-		boolean loop = true;
+	public static void main(String[] args) throws IOException {
+		BankController bank = new BankController(new AccountPersistence());
 		
-		// GUI
 		LoginFrame loginFrame = new LoginFrame(bank);
 		loginFrame.setVisible(true);
-		
-		// Persistence Test
-		
-		// Remember to erase the 'throws Exceptions' after testing
-		
-//		AbstractAccount testAccount1 = new TaxAccount("1111");
-		AbstractAccount testAccount2 = new OrdinaryAccount("1234");
-//		AbstractAccount testAccount3 = new SavingsAccount("2345");
-//		AbstractAccount testAccount4 = new SpecialAccount("3456");
+	}
+	
+/*
+	private static Scanner scanner = new Scanner(System.in);
 
-		AccountPersistence ap = new AccountPersistence();
+	public static void main(String[] args) throws IOException {
 		
-		ap.save();
-		
+		boolean loop = true;
+				
 		while (loop) {
 			switch (mainMenu()) {
 			case 1:
@@ -171,7 +162,9 @@ public class ATM24H {
 			}
 		}
 	}
-
+*/
+	
+/*
 	private static int mainMenu() {
 		System.out.println("================================");
 		System.out.println("Welcome to the Our Bank");
@@ -189,9 +182,10 @@ public class ATM24H {
 		System.out.println("================================");
 		System.out.println("Enter the desired option: ");
 		return scanner.nextInt();
-
 	}
-
+*/
+	
+/*
 	private static int addAccountMenu() {
 		System.out.println("================================");
 		System.out.println("Add New OrdinaryAccount");
@@ -204,5 +198,6 @@ public class ATM24H {
 		System.out.println("Enter the desired option: ");
 		return scanner.nextInt();
 	}
-
+*/
+	
 }

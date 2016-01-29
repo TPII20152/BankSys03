@@ -1,18 +1,12 @@
 package banksys.account;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
-
 import banksys.account.exception.InsufficientFundsException;
 import banksys.account.exception.NegativeAmountException;
 
 public abstract class AbstractAccount {
 
-	@XStreamAlias(value = "number")
-	@XStreamAsAttribute
 	protected String number;
 	
-	@XStreamAlias(value = "balance")
 	protected double balance;
 
 	public AbstractAccount(String number) {

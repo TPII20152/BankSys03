@@ -20,6 +20,7 @@ import javax.swing.ImageIcon;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 import java.awt.Color;
 
 public class TransactionsFrame extends JFrame {
@@ -47,7 +48,7 @@ public class TransactionsFrame extends JFrame {
 		setTitle("Transactions");
 		setBackground(Color.ORANGE);
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 450, 320);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.ORANGE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -227,7 +228,7 @@ public class TransactionsFrame extends JFrame {
 			try {
 				bank.doEarnInterest(number);
 				JOptionPane.showMessageDialog(null, "Operation was successful!", "Success", JOptionPane.PLAIN_MESSAGE);
-			} catch (BankTransactionException bte) {
+			} catch (BankTransactionException | FileNotFoundException bte) {
 				JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}
@@ -241,7 +242,7 @@ public class TransactionsFrame extends JFrame {
 			try {
 				bank.doEarnBonus(number);
 				JOptionPane.showMessageDialog(null, "Operation was successful!", "Success", JOptionPane.PLAIN_MESSAGE);
-			} catch (BankTransactionException bte) {
+			} catch (BankTransactionException | FileNotFoundException bte) {
 				JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}

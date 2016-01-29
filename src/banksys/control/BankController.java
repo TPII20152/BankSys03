@@ -1,5 +1,7 @@
 package banksys.control;
 
+import java.io.FileNotFoundException;
+
 import banksys.account.AbstractAccount;
 import banksys.account.SavingsAccount;
 import banksys.account.SpecialAccount;
@@ -45,22 +47,23 @@ public class BankController {
 		}
 	}
 
-	public void doCredit(String number, double amount) throws BankTransactionException {
+	public void doCredit(String number, double amount) throws BankTransactionException, FileNotFoundException {
 		AbstractAccount account;
 		try {
 			account = this.repository.retrieve(number);
 		} catch (AccountNotFoundException anfe) {
 			throw new BankTransactionException(anfe);
 		}
+		
 		try {
 			account.credit(amount);
+			this.repository.update(account);
 		} catch (NegativeAmountException nae) {
 			throw new BankTransactionException(nae);
 		}
-
 	}
 
-	public void doDebit(String number, double amount) throws BankTransactionException {
+	public void doDebit(String number, double amount) throws BankTransactionException, FileNotFoundException {
 		AbstractAccount account;
 		try {
 			account = this.repository.retrieve(number);
@@ -69,6 +72,7 @@ public class BankController {
 		}
 		try {
 			account.debit(amount);
+			this.repository.update(account);
 		} catch (InsufficientFundsException ife) {
 			throw new BankTransactionException(ife);
 		} catch (NegativeAmountException nae) {
@@ -77,17 +81,17 @@ public class BankController {
 	}
 
 	public double getBalance(String number) throws BankTransactionException {
-		AbstractAccount conta;
+		AbstractAccount account;
 		try {
-			conta = this.repository.retrieve(number);
-			return conta.getBalance();
+			account = this.repository.retrieve(number);
+			return account.getBalance();
 		} catch (AccountNotFoundException anfe) {
 			throw new BankTransactionException(anfe);
 		}
 
 	}
 
-	public void doTransfer(String fromNumber, String toNumber, double amount) throws BankTransactionException {
+	public void doTransfer(String fromNumber, String toNumber, double amount) throws BankTransactionException, FileNotFoundException {
 		AbstractAccount fromAccount;
 		try {
 			fromAccount = this.repository.retrieve(fromNumber);
@@ -105,6 +109,9 @@ public class BankController {
 		try {
 			fromAccount.debit(amount);
 			toAccount.credit(amount);
+			this.repository.update(fromAccount);
+			this.repository.update(toAccount);
+
 		} catch (InsufficientFundsException sie) {
 			throw new BankTransactionException(sie);
 		} catch (NegativeAmountException nae) {
@@ -112,7 +119,7 @@ public class BankController {
 		}
 	}
 
-	public void doEarnInterest(String number) throws BankTransactionException, IncompatibleAccountException {
+	public void doEarnInterest(String number) throws BankTransactionException, IncompatibleAccountException, FileNotFoundException {
 		AbstractAccount auxAccount;
 		try {
 			auxAccount = this.repository.retrieve(number);
@@ -122,12 +129,13 @@ public class BankController {
 
 		if (auxAccount instanceof SavingsAccount) {
 			((SavingsAccount) auxAccount).earnInterest();
+			this.repository.update(auxAccount);
 		} else {
 			throw new IncompatibleAccountException(number);
 		}
 	}
 
-	public void doEarnBonus(String number) throws BankTransactionException, IncompatibleAccountException {
+	public void doEarnBonus(String number) throws BankTransactionException, IncompatibleAccountException, FileNotFoundException {
 		AbstractAccount auxAccount;
 		try {
 			auxAccount = this.repository.retrieve(number);
@@ -137,6 +145,7 @@ public class BankController {
 
 		if (auxAccount instanceof SpecialAccount) {
 			((SpecialAccount) auxAccount).earnBonus();
+			this.repository.update(auxAccount);
 		} else {
 			throw new IncompatibleAccountException(number);
 		}

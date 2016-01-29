@@ -68,4 +68,9 @@ public class AccountVector implements IAccountRepository {
 		return null;
 	}
 
+	@Override
+	public void update(AbstractAccount account) {
+		// TODO Auto-generated method stub	
+	}
+
 }

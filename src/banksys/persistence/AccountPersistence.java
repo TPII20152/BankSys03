@@ -3,12 +3,12 @@ package banksys.persistence;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.DomDriver;
 
 import banksys.account.AbstractAccount;
 import banksys.persistence.exception.AccountCreationException;
@@ -18,26 +18,27 @@ import banksys.persistence.exception.AccountNotFoundException;
 public class AccountPersistence implements IAccountRepository {
 
 	private File file;
-	private List<AbstractAccount> accounts;
-	private XStream xs = new XStream(new DomDriver());
-
 	
 	public AccountPersistence() throws IOException {
 		file = new File("data.xml");
-		accounts = null;
 		
-		if(!file.exists()) {
+		if (!file.exists()) {
 			file.createNewFile();
-			
+			XStream xs = new XStream();
 			xs.toXML(new ArrayList<AbstractAccount>(), new FileOutputStream(file));
 		}
 	}
 
 	@Override
 	public void create(AbstractAccount account) throws AccountCreationException {
-		List<AbstractAccount> list = reader();
+		List<AbstractAccount> list = null;
+		try {
+			list = read();
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}
 		
-		if (search(account.getNumber()) == null) {
+		if (search(account.getNumber(), list) == null) {
 			list.add(account);
 		}
 		else {
@@ -45,7 +46,7 @@ public class AccountPersistence implements IAccountRepository {
 		}
 		
 		try {
-			save();
+			write(list);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -53,17 +54,23 @@ public class AccountPersistence implements IAccountRepository {
 
 	@Override
 	public void delete(String number) throws AccountDeletionException {
-		List<AbstractAccount> list = reader();
+		List<AbstractAccount> list = null;
+		try {
+			list = read();
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}
 		
-		AbstractAccount acc = search(number);
-		if (acc != null) {
-			list.remove(acc);
-		} else {
+		AbstractAccount account = search(number, list);
+		if (account != null) {
+			list.remove(account);
+		}
+		else {
 			throw new AccountDeletionException("OrdinaryAccount doesn't exist!", number);
 		}
 		
 		try {
-			save();
+			write(list);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -72,12 +79,17 @@ public class AccountPersistence implements IAccountRepository {
 
 	@Override
 	public AbstractAccount retrieve(String number) throws AccountNotFoundException {
-		List<AbstractAccount> lista = reader();
+		List<AbstractAccount> list = null;
+		try {
+			list = read();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 		
-		if (!lista.isEmpty()) {
-			for (AbstractAccount conta : lista) {
-				if (conta.getNumber().equals(number)) {
-					return conta;
+		if (!list.isEmpty()) {
+			for (AbstractAccount account : list) {
+				if (account.getNumber().equals(number)) {
+					return account;
 				}
 			}
 		}
@@ -86,14 +98,21 @@ public class AccountPersistence implements IAccountRepository {
 
 	@Override
 	public AbstractAccount[] list() {
-		List<AbstractAccount> list = reader();
+		List<AbstractAccount> list = null;
+		try {
+			list = read();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
 		AbstractAccount[] array = null;
 		
 		if (!list.isEmpty()) {
-			array = new AbstractAccount[list.size()];
 			int i = 0;
-			for (AbstractAccount acc : list) {
-				array[i++] = acc;
+			array = new AbstractAccount[list.size()];
+			
+			for (AbstractAccount account : list) {
+				array[i++] = account;
 			}
 		}
 		return array;
@@ -101,16 +120,23 @@ public class AccountPersistence implements IAccountRepository {
 
 	@Override
 	public int numberOfAccounts() {
-		List<AbstractAccount> list = reader();
+		List<AbstractAccount> list = null;
+		try {
+			list = read();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 		return list.size();
 	}
 	
-	private List<AbstractAccount> reader() {
+	@SuppressWarnings("unchecked")
+	private List<AbstractAccount> read() throws FileNotFoundException {
 		List<AbstractAccount> list = null;
+		XStream xs = new XStream();
+						
+		list = (List<AbstractAccount>) xs.fromXML(new FileReader(file));
 		
-		list = (List<AbstractAccount>) xs.fromXML(file);
-
-		if(list != null) {
+		if (list != null) {
 			return list;
 		}
 		else {
@@ -118,17 +144,36 @@ public class AccountPersistence implements IAccountRepository {
 		}
 	}
 	
-	private AbstractAccount search(String number) {
-		for (AbstractAccount account : accounts) {
+	private void write(List<AbstractAccount> list) throws FileNotFoundException {
+		XStream xs = new XStream();
+		xs.toXML(list, new FileOutputStream(file));
+	}
+	
+	private AbstractAccount search(String number, List<AbstractAccount> list) {
+		for (AbstractAccount account : list) {
 			if (account.getNumber().equals(number)) {
 				return account;
 			}
 		}
 		return null;
 	}
-	
-	private void save() throws FileNotFoundException {
-		xs.toXML(accounts, new FileOutputStream(file));
+
+	@Override
+	public void update(AbstractAccount account) throws FileNotFoundException {
+		List<AbstractAccount> list = null;
+		
+		list = read();
+		
+		if (!list.isEmpty()) {
+			for (AbstractAccount acc : list) {
+				if (acc.getNumber().equals(account.getNumber())) {
+					list.set(list.indexOf(acc), account);
+				}
+			}
+		}
+		
+		write(list);
+		
 	}
-	
+
 }
