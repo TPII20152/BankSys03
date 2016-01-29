@@ -21,6 +21,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.awt.Color;
 
 public class TransactionsFrame extends JFrame {
@@ -214,7 +215,7 @@ public class TransactionsFrame extends JFrame {
 					JOptionPane.showMessageDialog(null, "Operation was successful!\nAccount number " + number + " was removed.", "Success", JOptionPane.PLAIN_MESSAGE);
 					setVisible(false);
 				}
-			} catch (BankTransactionException bte) {
+			} catch (BankTransactionException | IOException bte) {
 				JOptionPane.showMessageDialog(null, "Error: " + bte.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}

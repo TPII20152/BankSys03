@@ -1,0 +1,5 @@
+(29-01-2016 15:08:11) teste
+(29-01-2016 15:08:12) teste
+(29-01-2016 15:08:13) teste
+(29-01-2016 15:24:19) [Success] {Add Account} Account number 6666 was created.
+(29-01-2016 15:29:11) [Success] <Remove Account> Account number 6666 was removed.
