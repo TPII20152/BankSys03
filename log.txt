@@ -994,3 +994,8 @@
 (30-01-2016 11:42:58) [Success] <Earn Interest> Account number 6789 got interest credited
 (30-01-2016 11:42:58) [Success] <Balance> Account number 6789 consulted balance: 10.01
 (30-01-2016 11:42:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 12:10:30) [Success] <Balance> Account number 5555 consulted balance: 55.0
+(30-01-2016 12:10:38) [Success] <Balance> Account number 1111 consulted balance: 29.980000000000004
+(30-01-2016 12:22:25) [Success] <Add Account> Account number 6666 was created
+(30-01-2016 12:28:08) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 12:31:53) [Success] <Balance> Account number 4444 consulted balance: 40.4

@@ -64,7 +64,7 @@ public class LoginFrame extends JFrame {
 		setContentPane(contentPane);
 		
 		menuBar();
-		initialize();
+		login();
 	}
 	
 	private void menuBar() {
@@ -103,7 +103,7 @@ public class LoginFrame extends JFrame {
 		aboutMenuItem.addActionListener(aboutAction);
 	}
 	
-	private void initialize() {
+	private void login() {
 		exitAction = new ExitAction();
 		okAction = new OkAction();
 		
@@ -166,7 +166,8 @@ public class LoginFrame extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			JOptionPane.showMessageDialog(null, "Made by I. Santiago and L. Rocha\n"
-											  + "from Federal University of Ceará", "About", JOptionPane.INFORMATION_MESSAGE, icon);			
+											  + "from Federal University of Ceara\n"
+											  + "GitHub: https://github.com/TPII20152/BankSys03", "About", JOptionPane.INFORMATION_MESSAGE, icon);			
 		}
 	}
 	

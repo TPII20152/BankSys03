@@ -30,6 +30,7 @@ public class TransactionsFrame extends JFrame {
 	
 	private JPanel contentPane;
 	private JPanel transactionsPane;
+	
 	private ExitAction exitAction;
 	private DoCreditAction doCreditAction;
 	private DoDebitAction doDebitAction;
@@ -55,10 +56,10 @@ public class TransactionsFrame extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		initialize();
+		transactions();
 	}
 	
-	public void initialize() {
+	public void transactions() {
 		exitAction = new ExitAction();
 		doCreditAction = new DoCreditAction();
 		doDebitAction = new DoDebitAction();

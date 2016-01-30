@@ -42,12 +42,17 @@ public class AddNewAccountFrame extends JFrame {
 	private JPanel optionsPane;
 	private JPanel accountNumberPane;
 	private JPanel buttonsPane;
+	
 	private JTextField accountNumberTextField;
+	
 	private JLabel titleLabel;
+	
 	private JButton okButton;
 	private JButton cancelButton;
+	
 	private CancelAction cancelAction;
 	private OkAction okAction;
+	
 	private ButtonGroup buttonGroup;
 	private JRadioButton ordinaryRadioButton;
 	private JRadioButton specialRadioButton;
@@ -59,9 +64,6 @@ public class AddNewAccountFrame extends JFrame {
 	public AddNewAccountFrame(BankController bank) {
 		this.bank = bank;
 		
-		cancelAction = new CancelAction();
-		okAction = new OkAction();
-		
 		setBackground(Color.CYAN);
 		setTitle("Add New Account");
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
@@ -69,50 +71,49 @@ public class AddNewAccountFrame extends JFrame {
 		
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.CYAN);
+		
 		titlePane = new JPanel();
 		FlowLayout flowLayout_2 = (FlowLayout) titlePane.getLayout();
 		flowLayout_2.setVgap(15);
 		titlePane.setBackground(Color.WHITE);
+		
 		newAccountPane = new JPanel();
 		newAccountPane.setBackground(Color.WHITE);
 		FlowLayout flowLayout = (FlowLayout) newAccountPane.getLayout();
 		flowLayout.setVgap(30);
 		flowLayout.setHgap(30);
+		
 		optionsPane = new JPanel();
+		
 		accountNumberPane = new JPanel();
 		FlowLayout flowLayout_3 = (FlowLayout) accountNumberPane.getLayout();
 		flowLayout_3.setHgap(20);
+		
 		buttonsPane = new JPanel();
 		buttonsPane.setBackground(Color.WHITE);
 		FlowLayout flowLayout_1 = (FlowLayout) buttonsPane.getLayout();
 		flowLayout_1.setVgap(15);
 		flowLayout_1.setHgap(20);
 		
-		okButton = new JButton("OK");
-		buttonsPane.add(okButton);
-		
-		okButton.addActionListener(okAction);
-		
-		cancelButton = new JButton("Cancel");
-		buttonsPane.add(cancelButton);
-		
-		cancelButton.addActionListener(cancelAction);
-		
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		
-		initialize();
-	}
-	
-	private void initialize() {		
-		buttonGroup = new ButtonGroup();
 		contentPane.setLayout(new BorderLayout(0, 0));
 		
+		title();
+		form();
+		buttons();
+	}
+	
+	private void title() {
 		titleLabel = new JLabel("Add New Account");
 		titleLabel.setFont(new Font("Dialog", Font.BOLD, 30));
 		titlePane.add(titleLabel);
 		
 		contentPane.add(titlePane, BorderLayout.NORTH);
+	}
+	
+	private void form() {		
+		buttonGroup = new ButtonGroup();
 				
 		JLabel cuteImage = new JLabel();
 		cuteImage.setIcon(new ImageIcon(LoginFrame.class.getResource("/banksys/icon/icon2.png")));
@@ -154,6 +155,21 @@ public class AddNewAccountFrame extends JFrame {
 		newAccountPane.add(accountNumberPane);
 		
 		contentPane.add(newAccountPane, BorderLayout.CENTER);
+	}
+	
+	private void buttons() {
+		cancelAction = new CancelAction();
+		okAction = new OkAction();
+		
+		okButton = new JButton("OK");
+		buttonsPane.add(okButton);
+		
+		okButton.addActionListener(okAction);
+		
+		cancelButton = new JButton("Cancel");
+		buttonsPane.add(cancelButton);
+		
+		cancelButton.addActionListener(cancelAction);
 		
 		contentPane.add(buttonsPane, BorderLayout.SOUTH);
 	}
