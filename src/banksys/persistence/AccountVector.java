@@ -70,7 +70,7 @@ public class AccountVector implements IAccountRepository {
 
 	@Override
 	public void update(AbstractAccount account) {
-		// TODO Auto-generated method stub	
+		// Can be ignored
 	}
 
 }
