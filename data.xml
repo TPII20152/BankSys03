@@ -20,4 +20,29 @@
     <number>5555</number>
     <balance>55.0</balance>
   </banksys.account.OrdinaryAccount>
+  <banksys.account.SpecialAccount>
+    <number>7890</number>
+    <balance>10.1</balance>
+    <bonus>0.0</bonus>
+  </banksys.account.SpecialAccount>
+  <banksys.account.OrdinaryAccount>
+    <number>1234</number>
+    <balance>10.0</balance>
+  </banksys.account.OrdinaryAccount>
+  <banksys.account.OrdinaryAccount>
+    <number>3456</number>
+    <balance>8.0</balance>
+  </banksys.account.OrdinaryAccount>
+  <banksys.account.OrdinaryAccount>
+    <number>4567</number>
+    <balance>13.0</balance>
+  </banksys.account.OrdinaryAccount>
+  <banksys.account.OrdinaryAccount>
+    <number>5678</number>
+    <balance>12.0</balance>
+  </banksys.account.OrdinaryAccount>
+  <banksys.account.SavingsAccount>
+    <number>6789</number>
+    <balance>10.01</balance>
+  </banksys.account.SavingsAccount>
 </list>

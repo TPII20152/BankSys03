@@ -350,3 +350,604 @@
 (29-01-2016 23:59:53) [Success] <Remove Account> Account number 2345 was removed
 (29-01-2016 23:59:53) [Error] <Retrieve> Account number 9999 not found
 (29-01-2016 23:59:53) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:28:33) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:28:33) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:28:33) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:28:33) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:28:33) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:28:33) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:28:33) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:28:33) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:28:33) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:28:33) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:28:33) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:28:33) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:28:33) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:28:33) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:28:33) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:28:33) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:28:33) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:28:33) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:28:33) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:28:33) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:29:41) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:29:41) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:29:41) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:29:41) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:29:41) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:29:41) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:29:41) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:29:41) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:29:41) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:29:41) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:29:41) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:29:41) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:29:41) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:29:41) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:29:41) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:29:41) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:29:41) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:29:41) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:29:41) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:29:41) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:29:41) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:30:20) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:30:20) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:30:20) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:30:20) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:30:20) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:30:20) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:30:20) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:30:20) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:30:20) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:30:20) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:30:20) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:30:20) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:30:20) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:30:20) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:30:20) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:30:20) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:30:20) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:30:20) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:30:20) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:30:20) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:30:20) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:35:16) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:35:16) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:35:16) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:35:16) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:35:16) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:35:16) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:35:16) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:35:16) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:35:16) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:35:16) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:35:16) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:35:16) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:35:16) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:35:16) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:35:16) [Error] <Transfer> The amount of 4.0 wasn't transfered from 1234 to 3456 (insufficient funds)
+(30-01-2016 10:35:16) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:35:16) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:35:16) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:35:16) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:35:16) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:35:16) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:35:16) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:36:41) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:36:41) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:36:41) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:36:41) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:36:41) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:36:41) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:36:41) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:36:41) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:36:41) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:36:41) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:36:41) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:36:41) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:36:41) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:36:41) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:36:41) [Error] <Transfer> The amount of 2.0 wasn't transfered from 1234 to 3456 (insufficient funds)
+(30-01-2016 10:36:41) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:36:41) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:36:41) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:36:41) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:36:41) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:36:41) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:36:41) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:41:27) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:41:27) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:41:27) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:41:27) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:41:27) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:41:27) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:41:27) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:41:27) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:41:27) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:41:27) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:41:27) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:41:27) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:41:27) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:41:27) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:41:27) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:41:27) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:41:27) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:41:27) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:41:27) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:41:27) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:41:27) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:41:27) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:41:27) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:41:27) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:41:27) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:41:27) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:41:27) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:41:27) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:43:20) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:43:20) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:43:20) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:43:20) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:43:20) [Error] <Retrieve> Account number 4567 not found
+(30-01-2016 10:43:20) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:43:20) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:43:20) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:43:20) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:43:20) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:43:20) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:43:20) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:43:20) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:43:20) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:43:20) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:43:20) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:43:20) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:43:20) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:43:20) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:43:20) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:43:20) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:43:20) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:43:20) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:43:20) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:43:20) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:43:20) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:43:20) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:43:20) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:43:20) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:45:58) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:45:58) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:45:58) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:45:58) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:45:58) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 10:45:58) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:45:58) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:45:58) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:45:58) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:45:58) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:45:58) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:45:58) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:45:58) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:45:58) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:45:58) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:45:58) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:45:58) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:45:58) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:45:58) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:45:58) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:45:58) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:45:58) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:45:58) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:45:58) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:45:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:45:58) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:45:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:45:58) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:45:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:47:06) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:47:06) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:47:06) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:47:06) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:47:06) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 10:47:06) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:47:06) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:47:06) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:47:06) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:47:06) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:47:06) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:47:06) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:47:06) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:47:06) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:47:06) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:47:06) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:47:06) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:47:06) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:47:06) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:47:06) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:47:06) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:47:06) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:47:06) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:47:06) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:47:06) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:47:06) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:47:06) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:47:06) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:47:06) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:48:23) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 10:48:23) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:48:23) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:48:23) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:48:23) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:48:23) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 10:48:23) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:48:23) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:48:23) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:48:23) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:48:23) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:48:23) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:48:23) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:48:23) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:48:23) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:48:23) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:48:23) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:48:23) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:48:23) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:48:23) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:48:23) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:48:23) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:48:23) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:48:23) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:48:23) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:48:23) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:48:23) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:48:23) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:48:23) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:48:23) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:50:58) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 10:50:58) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:50:58) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:50:58) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:50:58) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:50:58) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 10:50:58) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:50:58) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:50:58) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:50:58) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:50:58) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:50:58) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:50:58) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:50:58) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:50:58) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:50:58) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:50:58) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:50:58) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:50:58) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:50:58) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:50:58) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:50:58) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:50:58) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:50:58) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:50:58) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:50:58) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 10:50:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:50:58) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:50:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:50:58) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:50:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:57:09) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 10:57:09) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:57:09) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:57:09) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:57:09) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:57:09) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 10:57:09) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:57:09) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:57:09) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:57:09) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:57:09) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:57:09) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:57:09) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:57:09) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:57:09) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:57:09) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:57:09) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:57:09) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:57:09) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:57:09) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:57:09) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:57:09) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:57:09) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:57:09) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:57:09) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:57:09) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 10:57:09) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:57:09) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:57:09) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:57:09) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:57:09) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 10:57:09) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 10:57:09) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 10:57:09) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 10:57:09) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:59:17) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 10:59:17) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 10:59:17) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 10:59:17) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 10:59:17) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 10:59:17) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 10:59:17) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 10:59:17) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 10:59:17) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 10:59:17) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 10:59:17) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 10:59:17) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 10:59:17) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:59:17) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 10:59:17) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 10:59:17) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 10:59:17) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 10:59:17) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 10:59:17) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 10:59:17) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 10:59:17) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 10:59:17) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 10:59:17) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 10:59:17) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 10:59:17) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 10:59:17) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 10:59:17) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 10:59:17) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:59:17) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 10:59:17) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 10:59:17) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 10:59:17) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 10:59:17) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 10:59:17) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 10:59:17) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 10:59:17) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:01:14) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 11:01:14) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 11:01:14) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 11:01:14) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 11:01:14) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 11:01:14) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 11:01:14) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 11:01:14) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 11:01:14) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 11:01:14) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 11:01:14) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 11:01:14) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 11:01:14) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:01:14) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:01:14) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 11:01:14) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 11:01:14) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 11:01:14) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 11:01:14) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 11:01:14) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 11:01:14) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 11:01:14) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 11:01:14) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 11:01:14) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 11:01:14) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 11:01:14) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 11:01:14) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:01:14) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:01:14) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:01:14) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 11:01:14) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:01:14) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 11:01:14) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 11:01:14) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 11:01:14) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 11:01:14) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 11:01:14) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:04:19) [Success] <Add Account> Account number 7890 was created
+(30-01-2016 11:04:19) [Success] <Credit> Account number 7890 got the credit of 10.0
+(30-01-2016 11:04:19) [Success] <Earn Bonus> Account number 7890 got bonus credited
+(30-01-2016 11:04:19) [Success] <Balance> Account number 7890 consulted balance: 10.1
+(30-01-2016 11:04:19) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 11:04:19) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 11:04:19) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 11:04:19) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 11:04:19) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 11:04:19) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 11:04:19) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 11:04:19) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 11:04:19) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 11:04:19) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 11:04:19) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 11:04:19) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 11:04:19) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:04:19) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:04:19) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 11:04:19) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 11:04:19) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 11:04:19) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 11:04:19) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 11:04:19) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 11:04:19) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 11:04:19) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 11:04:19) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 11:04:19) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 11:04:19) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 11:04:19) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 11:04:19) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:04:19) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:04:19) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:04:19) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 11:04:19) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:04:19) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 11:04:19) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 11:04:20) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 11:04:20) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 11:04:20) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 11:04:20) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:06:31) [Error] <Earn Bonus> Account number 1111 is not compatible with this operation (not a Special Account)
+(30-01-2016 11:06:31) [Success] <Add Account> Account number 7890 was created
+(30-01-2016 11:06:31) [Success] <Credit> Account number 7890 got the credit of 10.0
+(30-01-2016 11:06:31) [Success] <Earn Bonus> Account number 7890 got bonus credited
+(30-01-2016 11:06:31) [Success] <Balance> Account number 7890 consulted balance: 10.1
+(30-01-2016 11:06:31) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 11:06:31) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 11:06:31) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 11:06:31) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 11:06:31) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 11:06:31) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 11:06:31) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 11:06:31) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 11:06:31) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 11:06:31) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 11:06:31) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 11:06:31) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 11:06:31) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:06:31) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:06:31) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 11:06:31) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 11:06:31) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 11:06:31) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 11:06:31) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 11:06:31) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 11:06:31) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 11:06:31) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 11:06:31) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 11:06:31) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 11:06:31) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 11:06:31) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 11:06:31) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:06:31) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:06:31) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:06:31) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 11:06:31) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:06:31) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 11:06:31) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 11:06:31) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 11:06:31) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 11:06:31) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 11:06:31) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:07:50) [Error] <Earn Bonus> Account number 1111 is not compatible with this operation (not a Special Account)
+(30-01-2016 11:07:50) [Success] <Add Account> Account number 7890 was created
+(30-01-2016 11:07:50) [Success] <Credit> Account number 7890 got the credit of 10.0
+(30-01-2016 11:07:50) [Success] <Earn Bonus> Account number 7890 got bonus credited
+(30-01-2016 11:07:50) [Success] <Balance> Account number 7890 consulted balance: 10.1
+(30-01-2016 11:07:50) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 11:07:50) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 11:07:50) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 11:07:50) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 11:07:50) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 11:07:50) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 11:07:50) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 11:07:50) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 11:07:50) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 11:07:50) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 11:07:50) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 11:07:50) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 11:07:50) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:07:50) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:07:50) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 11:07:50) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 11:07:50) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 11:07:50) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 11:07:50) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 11:07:50) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 11:07:50) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 11:07:50) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 11:07:50) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 11:07:50) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 11:07:50) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 11:07:50) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 11:07:50) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:07:50) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:07:50) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:07:50) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 11:07:50) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:07:50) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 11:07:50) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 11:07:50) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 11:07:50) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 11:07:50) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 11:07:50) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:10:59) [Error] <Earn Bonus> Account number 1111 is not compatible with this operation (not a Special Account)
+(30-01-2016 11:10:59) [Success] <Add Account> Account number 7890 was created
+(30-01-2016 11:10:59) [Success] <Credit> Account number 7890 got the credit of 10.0
+(30-01-2016 11:10:59) [Success] <Earn Bonus> Account number 7890 got bonus credited
+(30-01-2016 11:10:59) [Success] <Balance> Account number 7890 consulted balance: 10.1
+(30-01-2016 11:10:59) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 11:10:59) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:10:59) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 11:10:59) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 11:10:59) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 11:10:59) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 11:10:59) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 11:10:59) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 11:10:59) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 11:10:59) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 11:10:59) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 11:10:59) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 11:10:59) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 11:10:59) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:10:59) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:10:59) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 11:10:59) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 11:10:59) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 11:10:59) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 11:10:59) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 11:10:59) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 11:10:59) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 11:10:59) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 11:10:59) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 11:10:59) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 11:10:59) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 11:10:59) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 11:10:59) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:10:59) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:10:59) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:10:59) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 11:10:59) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:10:59) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 11:10:59) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 11:10:59) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 11:10:59) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 11:10:59) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 11:10:59) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:12:02) [Error] <Earn Bonus> Account number 1111 is not compatible with this operation (not a Special Account)
+(30-01-2016 11:12:02) [Success] <Add Account> Account number 7890 was created
+(30-01-2016 11:12:02) [Success] <Credit> Account number 7890 got the credit of 10.0
+(30-01-2016 11:12:02) [Success] <Earn Bonus> Account number 7890 got bonus credited
+(30-01-2016 11:12:02) [Success] <Balance> Account number 7890 consulted balance: 10.1
+(30-01-2016 11:12:02) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 11:12:02) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:12:02) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 11:12:02) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 11:12:02) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 11:12:02) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 11:12:02) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 11:12:02) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 11:12:02) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 11:12:02) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 11:12:02) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 11:12:02) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 11:12:02) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 11:12:02) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:12:02) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:12:02) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 11:12:02) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 11:12:02) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 11:12:02) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 11:12:02) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 11:12:02) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 11:12:02) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 11:12:02) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 11:12:02) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 11:12:02) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 11:12:02) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 11:12:02) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 11:12:02) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:12:02) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:12:02) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:12:02) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 11:12:02) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:12:02) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 11:12:02) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 11:12:02) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 11:12:02) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 11:12:02) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 11:12:02) [Error] <Retrieve> Account number 9999 not found
