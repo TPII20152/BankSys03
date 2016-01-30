@@ -18,21 +18,21 @@ public class AccountPersistenceTest {
 	@Test
 	public void testAccountPersistence() throws IOException {
 		AccountPersistence ap = new AccountPersistence();
-		assertEquals(6, ap.numberOfAccounts(), 0);
+		assertEquals(12, ap.numberOfAccounts(), 0);
 	}
 
 	@Test
 	public void testCreate() throws IOException, AccountCreationException {
 		AccountPersistence ap = new AccountPersistence();
-		AbstractAccount account = new OrdinaryAccount("1234");
+		AbstractAccount account = new OrdinaryAccount("2345");
 		ap.create(account);
-		assertEquals(7, ap.numberOfAccounts(), 0);
+		assertEquals(13, ap.numberOfAccounts(), 0);
 	}
 	
 	@Test (expected = AccountCreationException.class)
 	public void testCreateTwice() throws IOException, AccountCreationException {
 		AccountPersistence ap = new AccountPersistence();
-		AbstractAccount account = new OrdinaryAccount("2345");
+		AbstractAccount account = new OrdinaryAccount("8901");
 		ap.create(account);
 		ap.create(account);
 		assertEquals(6, ap.numberOfAccounts(), 0);
@@ -41,10 +41,10 @@ public class AccountPersistenceTest {
 	@Test
 	public void testDelete() throws IOException, AccountDeletionException, AccountCreationException {
 		AccountPersistence ap = new AccountPersistence();
-		AbstractAccount account = new OrdinaryAccount("3456");
+		AbstractAccount account = new OrdinaryAccount("9012");
 		ap.create(account);
-		ap.delete("3456");
-		assertEquals(7, ap.numberOfAccounts(), 0);
+		ap.delete("9012");
+		assertEquals(13, ap.numberOfAccounts(), 0);
 	}
 	
 	@Test (expected = AccountDeletionException.class)
@@ -83,13 +83,13 @@ public class AccountPersistenceTest {
 	@Test
 	public void testNumberOfAccounts() throws IOException {
 		AccountPersistence ap = new AccountPersistence();
-		assertEquals(5, ap.numberOfAccounts(), 0);
+		assertEquals(11, ap.numberOfAccounts(), 0);
 	}
 
 	@Test
 	public void testUpdate() throws IOException, AccountCreationException, NegativeAmountException {
 		AccountPersistence ap = new AccountPersistence();
-		String number = "4567";
+		String number = "0123";
 		AbstractAccount account = new OrdinaryAccount(number);
 		ap.create(account);
 		account.credit(42.0);
