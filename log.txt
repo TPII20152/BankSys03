@@ -951,3 +951,46 @@
 (30-01-2016 11:12:02) [Success] <Earn Interest> Account number 6789 got interest credited
 (30-01-2016 11:12:02) [Success] <Balance> Account number 6789 consulted balance: 10.01
 (30-01-2016 11:12:02) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:42:58) [Error] <Earn Bonus> Account number 1111 is not compatible with this operation (not a Special Account)
+(30-01-2016 11:42:58) [Success] <Add Account> Account number 7890 was created
+(30-01-2016 11:42:58) [Success] <Credit> Account number 7890 got the credit of 10.0
+(30-01-2016 11:42:58) [Success] <Earn Bonus> Account number 7890 got bonus credited
+(30-01-2016 11:42:58) [Success] <Balance> Account number 7890 consulted balance: 10.1
+(30-01-2016 11:42:58) [Error] <Transfer> The amount of 1000000.0 wasn't transfered from 2222 to 4444 (insufficient funds)
+(30-01-2016 11:42:58) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:42:58) [Error] <Add Account> Account number 1111 wasn't created (account already exist)
+(30-01-2016 11:42:58) [Success] <Add Account> Account number 1234 was created
+(30-01-2016 11:42:58) [Success] <Balance> Account number 1234 consulted balance: 0.0
+(30-01-2016 11:42:58) [Error] <Debit> Account number 1111 didn't get the debit of 1.0E8 (insufficient funds)
+(30-01-2016 11:42:58) [Error] <Transfer> The amount of -2.0 wasn't transfered from 2222 to 4444 (negative amount)
+(30-01-2016 11:42:58) [Error] <Earn Interest> Account number 1111 is not compatible with this operation (not a Savings Account)
+(30-01-2016 11:42:58) [Success] <Add Account> Account number 3456 was created
+(30-01-2016 11:42:58) [Success] <Credit> Account number 3456 got the credit of 10.0
+(30-01-2016 11:42:58) [Success] <Debit> Account number 3456 got the debit of 2.0
+(30-01-2016 11:42:58) [Success] <Balance> Account number 3456 consulted balance: 8.0
+(30-01-2016 11:42:58) [Error] <Credit> Account number 1234 didn't get the credit of -10.0 (negative amount)
+(30-01-2016 11:42:58) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:42:58) [Success] <Balance> Account number 2222 consulted balance: 10.0
+(30-01-2016 11:42:58) [Success] <Add Account> Account number 2345 was created
+(30-01-2016 11:42:58) [Success] <Balance> Account number 2345 consulted balance: 0.0
+(30-01-2016 11:42:58) [Error] <Debit> Account number 3456 didn't get the debit of -2.0 (negative amount)
+(30-01-2016 11:42:58) [Success] <Add Account> Account number 4567 was created
+(30-01-2016 11:42:58) [Success] <Add Account> Account number 5678 was created
+(30-01-2016 11:42:58) [Success] <Credit> Account number 4567 got the credit of 15.0
+(30-01-2016 11:42:58) [Success] <Credit> Account number 5678 got the credit of 10.0
+(30-01-2016 11:42:58) [Success] <Transfer> The amount of 2.0 was transfered from 4567 to 5678
+(30-01-2016 11:42:58) [Success] <Balance> Account number 4567 consulted balance: 13.0
+(30-01-2016 11:42:58) [Success] <Balance> Account number 5678 consulted balance: 12.0
+(30-01-2016 11:42:58) [Success] <Credit> Account number 1234 got the credit of 10.0
+(30-01-2016 11:42:58) [Success] <Balance> Account number 1234 consulted balance: 10.0
+(30-01-2016 11:42:58) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:42:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:42:58) [Error] <Retrieve> Account number 0000 not found
+(30-01-2016 11:42:58) [Success] <Remove Account> Account number 2345 was removed
+(30-01-2016 11:42:58) [Error] <Retrieve> Account number 9999 not found
+(30-01-2016 11:42:58) [Error] <Remove Account> Account number 2345 wasn't removed (account doesn't exist)
+(30-01-2016 11:42:58) [Success] <Add Account> Account number 6789 was created
+(30-01-2016 11:42:58) [Success] <Credit> Account number 6789 got the credit of 10.0
+(30-01-2016 11:42:58) [Success] <Earn Interest> Account number 6789 got interest credited
+(30-01-2016 11:42:58) [Success] <Balance> Account number 6789 consulted balance: 10.01
+(30-01-2016 11:42:58) [Error] <Retrieve> Account number 9999 not found
