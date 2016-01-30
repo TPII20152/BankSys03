@@ -129,6 +129,24 @@ public class AccountPersistence implements IAccountRepository {
 		return list.size();
 	}
 	
+	@Override
+	public void update(AbstractAccount account) throws FileNotFoundException {
+		List<AbstractAccount> list = null;
+		
+		list = read();
+		
+		if (!list.isEmpty()) {
+			for (AbstractAccount acc : list) {
+				if (acc.getNumber().equals(account.getNumber())) {
+					list.set(list.indexOf(acc), account);
+				}
+			}
+		}
+		
+		write(list);
+		
+	}
+	
 	@SuppressWarnings("unchecked")
 	private List<AbstractAccount> read() throws FileNotFoundException {
 		List<AbstractAccount> list = null;
@@ -156,24 +174,6 @@ public class AccountPersistence implements IAccountRepository {
 			}
 		}
 		return null;
-	}
-
-	@Override
-	public void update(AbstractAccount account) throws FileNotFoundException {
-		List<AbstractAccount> list = null;
-		
-		list = read();
-		
-		if (!list.isEmpty()) {
-			for (AbstractAccount acc : list) {
-				if (acc.getNumber().equals(account.getNumber())) {
-					list.set(list.indexOf(acc), account);
-				}
-			}
-		}
-		
-		write(list);
-		
 	}
 
 }
