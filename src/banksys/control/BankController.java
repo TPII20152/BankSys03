@@ -46,7 +46,7 @@ public class BankController {
 		try {
 			this.repository.delete(number);
 		} catch (AccountDeletionException ade) {
-			Logger.register("[Error] <Remove Account> Account number " + number + " wasn't removed (account doesn't exist");
+			Logger.register("[Error] <Remove Account> Account number " + number + " wasn't removed (account doesn't exist)");
 			throw new BankTransactionException(ade);
 		}
 		Logger.register("[Success] <Remove Account> Account number " + number + " was removed");
